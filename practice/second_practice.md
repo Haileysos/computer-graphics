@@ -1,6 +1,5 @@
-simple
-try these..
-1) 빨간배경 2)녹색 배경 3)노란 배경
+# 1) 빨간배경 2)녹색 배경 3)노란 배경
+<img width="20%" alt="image" src="https://github.com/user-attachments/assets/0b1ef42f-3fae-43ff-8104-810ca405dd05" /> ← 결과물
 
 ```c++
 #include <gl/glut.h>
