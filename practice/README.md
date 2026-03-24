@@ -1,4 +1,4 @@
-
+```c++
 // 파란색으로 채워진 창 출력하기
 #include<GL/glut.h>
 #include<stdio.h>
@@ -31,3 +31,15 @@ int main(int argc, char** argv){
 
 	glutMainLoop();
 }
+```
+
+오류 ? 출력창 초기 실행시 검정 화면만 출력 or 흰색 화면만 출력 (초기샛팅값=파란색 임에도 불구하고)  
+
+가정 : GPU 혹은 OS종류 및 버전에 따라 더블 버퍼를 기본값으로 사용하는 경우  
+
+해결 :  
+
+glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);  →  glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
+glFlush();  →  glutSwapBuffers();
+
+glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB); -> glFinish();
