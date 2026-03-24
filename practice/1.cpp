@@ -11,7 +11,7 @@ void RenderScene(void){
 	glClear(GL_COLOR_BUFFER_BIT);
 	//드로잉 명령을 전달한다
 	//glFlush();
-  glutSwapBuffers();
+ 	glutSwapBuffers();
 }
 
 void SetupRC(void){
