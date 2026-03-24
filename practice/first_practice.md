@@ -1,5 +1,7 @@
+# 파란색으로 채워진 창 출력하기  
+<img width="20%" alt="image" src="https://github.com/user-attachments/assets/254130b1-19c7-4985-b744-9a6c82bdf196" /> ← 결과물
+
 ```c++
-// 파란색으로 채워진 창 출력하기
 #include<GL/glut.h>
 #include<stdio.h>
 #include<iostream>
