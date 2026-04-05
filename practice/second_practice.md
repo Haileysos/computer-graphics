@@ -11,7 +11,7 @@ void RenderScene(void) {
 	//현재 색상을 사용하여 화면을 지운다
 	glClear(GL_COLOR_BUFFER_BIT);
 	glColor3f(1.0f, 0.0f, 0.0f);
-	glRectf(-0.5f, -0.5f, 0.5f, 0.5f);
+	glRectf(-0.5f, -0.5f, 0.5f, 0.5f); 	glRectf(-0.5f, 0.5f, 0.5f, -0.5f); 도 가능
 	//드로잉 명령을 전달한다
 	glutSwapBuffers();
 }
