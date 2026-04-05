@@ -70,7 +70,8 @@ glViewport(0, 0, 500, 500);
 - x, y = 시작점 (왼쪽 아래) / width, height = 출력 크기
 - glutInitWindowSize 창 안에서 실제로 그림을 그릴 영역을 설정하는 것
 - 위 코드는 시작점이 왼쪽 아래 (0,0) 그리고 크기: 500 x 500
-- glViewport()의 기본값은 glutInitWindowSize와 같음  
+- glViewport()를 명시적으로 호출하지 않으면, 시스템은 **기본값(Default)**을 사용
+- 기본값은 보통 (0, 0, 윈도우 너비, 윈도우 높이) glutInitWindowSize와 같음
 - 기본적으로 창 전체 영역으로 설정되어 있다는 말임
 - glViewport()는 일반적으로 glutInitWindowSize와 동일하게 많이 설정
 - 왜? "창 전체에 꽉 차게 그림을 그리고 싶으니까."
